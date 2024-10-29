@@ -59,7 +59,7 @@ export const getLastMonths = () => {
 //   return newUrl;
 // };
 
-export const transformImage = (imageUrl: string | undefined, size: number): string => {
+export const transformImage = (imageUrl: string | undefined, size: number=300): string => {
   if (!imageUrl) {
     console.warn("Image URL is undefined, using placeholder.");
     return "/images/placeholder.png";  // Path to your placeholder image
